@@ -1,0 +1,10 @@
+<form [formGroup]="createuserForm" class="form">
+    <h2>Crear Congreso</h2>
+    <span>Nombre</span>
+    <p><input formControlName='nombre' name="nombre" [(ngModel)]="congress.nombre" placeholder="nombre"></p>
+    <span>Congresos</span>
+    <p><input formControlName='congresos' name="congresos" [(ngModel)]="congress.congresos" placeholder="congresos"></p>
+    <span>Tema</span>
+    <p><input formControlName='tema' name="tema" [(ngModel)]="congress.tema"  placeholder="tema"></p>
+    <button (click)="createcongress()">Guardar</button>
+</form>

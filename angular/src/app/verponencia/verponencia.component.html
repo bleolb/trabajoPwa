@@ -1,0 +1,17 @@
+<body class="btn">
+    <h1>Ponencias Ingresadas</h1>
+    <table class="table">
+        <button class="btn" routerLink="/crearponencias">Registrar Ponencia</button>
+        <tbody>
+            <tr *ngFor="let item of ponencia">
+                <td>{{item.titulo}}</td><br>
+                <td>{{item.area}}</td><br>
+                <td>{{item.resumen}}</td><br>
+                <td>
+                    <button class="btn" (click)="edit(item)">Editar</button>
+                    <button class="btn" (click)="deleteponencias(item._id)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>

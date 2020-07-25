@@ -1,0 +1,18 @@
+<form [formGroup]="createuserForm" class="form">
+    <h2>Crear Organizador</h2>
+    <span>Nombre</span>
+    <p><input formControlName='nombre' name="nombre" placeholder="nombre"></p>
+    <span>Apellido</span>
+    <p><input formControlName='apellido' name="apellido" placeholder="Apellido"></p>
+    <span>Edad</span>
+    <p><input formControlName='edad' name="edad" placeholder="Edad"></p>
+    <span>Email</span>
+    <p><input formControlName='email' name="email" placeholder="Email"></p>
+    <span>Contraseña</span>
+    <p><input formControlName='password' name="password" placeholder="Contraseña"></p>
+    
+    <span>Foto</span>
+    <p><input type="file" formControlName='file' name="file" (change)="changeFile($event)" placeholder="file"></p>
+    <img width="25%" height="%25" src="{{verFyle}}" alt="">
+    <button (click)="createuser()">Guardar</button>
+</form>
