@@ -1,44 +1,49 @@
-// /* FONT IMPORTED */
+/* FONT IMPORTED */
 
-// /* Fira Sans */
+/* Fira Sans */
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans");
 
+.img1{
+    margin-top: 8%;
+}
 
-// #container {
-//   width: 100%;
-//   display: inline-block;
-// }
+.container {
+  width: 100%;
+  display: inline-block;
+}
 
-// /** HEADER */
+/** HEADER */
 
-// /** NAVIGATION BAR */
-// nav {
-//   overflow: hidden;
-//   background-color: #333;
-//   position: fixed;
-//   top: 0;
-//   width: 10%;
-//   ul {
-//     text-align: center;
-//     list-style-type: none;
-//     list-style-type: none;
-//     margin: 0;
-//     padding: 5px;
-//     li {
-//       display: inline;
-//       font-family: "Fira Sans", sans-serif;
-//       font-size: 17px;
-//       a {
-//         color: #f2f2f2;
-//         text-decoration: none;
-//         padding: 14px;
-//         &:hover {
-//           background-color: #111;
-//         }
-//       }
-//     }
-//   }
-// }
+/** NAVIGATION BAR */
+.d1 {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  .d2 {
+    text-align: center;
+    list-style-type: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    .d3 {
+      display: inline;
+      font-family: "Fira Sans", sans-serif;
+      font-size: 17px;
+      .button {
+        color: #111;
+        background-color: #b7f76e;
+        text-decoration: none;
+        padding: 14px;
+        &:hover {
+          background-color: #c4fc84 ;
+        }
+      }
+    }
+  }
+}
 
-// .content {
-//   text-align: center;
-// }
+.content {
+  text-align: center;
+}
